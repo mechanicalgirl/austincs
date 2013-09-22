@@ -4,54 +4,53 @@ austincs
 Install
 -------
 
-1. create your own local copy of the project
++ create your own local copy of the project
 
 git clone https://github.com/mechanicalgirl/austincs.git
 
-2. cd into the austincs folder
++ cd into the austincs folder
 
 cd austincs
 
-3. install pip and virtualenv
++ install pip and virtualenv
 
 sudo easy_install pip
 [sudo] pip install virtualenv
 
-4. create and activate the virtual environment
++ create and activate the virtual environment
 
 virtualenv csta_env
 source csta_env/bin/activate
 
-5. install requirements
++ install requirements
 
 pip install -r requirements.txt
 
 Settings
 --------
 
-1. create the db folder and change its permissions
++ create the db folder and change its permissions
 
 mkdir db
 chmod 777 db
 
-2. modify the settings file (csta_project/settings.py) to edit the path to the database file
++ modify the settings file (csta_project/settings.py) to edit the path to the database file
 
 The value for DATABASES['NAME'] should be '/your/path/to/austincs/db/db'
 
 (Note: in that path, the first 'db' is the folder you just created, the second 'db' is the SQLite database file, which will be created when you run the command below)
 
-
-3. create the database tables
++ create the database tables
 
 python manage.py syncdb
 
 Launch the site
 ---------------
 
-1. start runserver
++ start runserver
 
 python mange.py runserver
 
-2. check the site in your browser
++ check the site in your browser
 
 http://127.0.0.1:8000/
