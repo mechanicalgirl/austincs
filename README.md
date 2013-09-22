@@ -15,11 +15,13 @@ cd austincs
 + install pip and virtualenv
 
 sudo easy_install pip
+
 [sudo] pip install virtualenv
 
 + create and activate the virtual environment
 
 virtualenv csta_env
+
 source csta_env/bin/activate
 
 + install requirements
@@ -32,6 +34,7 @@ Settings
 + create the db folder and change its permissions
 
 mkdir db
+
 chmod 777 db
 
 + modify the settings file (csta_project/settings.py) to edit the path to the database file
