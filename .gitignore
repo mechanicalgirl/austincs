@@ -1,0 +1,6 @@
+*.pyc
+.DS_Store
+
+manage.py
+
+db

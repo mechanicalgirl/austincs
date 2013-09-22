@@ -1,0 +1,77 @@
+{% extends "home.html" %}
+
+{% block page_title %}
+    Teacher Sign-Up
+{% endblock %}
+
+{% block content %}
+
+  {% include "title_body.html" %}
+  <div class="right half">
+
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+
+        <form action="/developers/" method="post" class="form well" style="padding-bottom: 0;">
+          <fieldset>
+            
+            <div class="control-group">
+              {% csrf_token %}
+              
+              <p>
+              <label class="control-label" for="multiSelect">Name<span class="required">*</span></label>
+              <input id="id_name" maxlength="200" name="name" type="text">
+              </p>
+
+              <p>
+              <label class="control-label" for="multiSelect">Email Address<span class="required">*</span></label>
+              <input id="id_email" maxlength="200" name="email" type="text">
+              </p>
+
+              <p>
+              <label class="control-label" for="multiSelect">School<span class="required">*</span></label>
+              <input id="id_school" maxlength="200" name="school" type="text" placeholder="At which school do you teach?">
+              </p>
+
+              <p>
+              <label class="control-label" for="multiSelect">Grade/Age Group</label>
+              <input id="id_grade_age" maxlength="10" name="grade_age" type="text" placeholder="What grade/age do you teach?">
+              </p>
+
+              <p>
+              <label class="control-label" for="multiSelect">Students</label>
+              <input id="id_no_of_students" maxlength="4" name="no_of_students" type="text" placeholder="How many students?">
+              </p>
+
+              <p>
+              <label class="control-label" for="multiSelect">Needs<span class="required">*</span></label>
+              <select id="id_needs" name="needs">
+                <option value="" selected="selected">------------</option>
+                <option value="A">Come in and speak to the class about their jobs</option>
+                <option value="B">Female programmers to talk about the challenges they face</option>
+                <option value="C">Someone to come in and teach a special unit</option>
+                <option value="D">Someone to help with an after-school program</option>
+                <option value="E">Other</option>
+              </select><br>
+              </p>
+
+              <p>
+              <label class="control-label" for="multiSelect">Other<span class="required">*</span></label>
+              <textarea class="field span12" id="id_other" name="other" rows="3" maxlength="200" placeholder="Is there anything else we need to know about your class? Any other comments?"></textarea>
+              </p>
+
+              <button type="submit" class="btn btn-primary" name="submit" value="submit">Submit</button>
+            </div>
+
+          </fieldset>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="clear"></div>
+
+{% endblock %}
