@@ -4,3 +4,4 @@
 - on home page, a list of announcements (blog posts)
 - automate matching between developers and teachers
 - add a footer - add an 'about' page to describe the project, add a link to a contact form
+- set up a Twitter account; add the feed to the home page
