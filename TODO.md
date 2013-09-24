@@ -5,3 +5,4 @@
 - automate matching between developers and teachers
 - add a footer - add an 'about' page to describe the project, add a link to a contact form
 - set up a Twitter account; add the feed to the home page
+- form validation on teacher signup - zip code needs to be valid and in Austin area (compile a list)
