@@ -15,6 +15,8 @@ class Teacher(models.Model):
     phone = models.CharField(max_length=200)
     school = models.CharField(max_length=200, blank=False,
             verbose_name='At which school do you teach?')
+    school_zip_code = models.IntegerField(max_length=5, blank=True, null=True,
+            verbose_name="What is the school's zip code? (for pairing purposes")
     grade_age = models.CharField(max_length=10, blank=False,
             verbose_name='What grade/age group do you teach?')
     no_of_students = models.CharField(max_length=4,
