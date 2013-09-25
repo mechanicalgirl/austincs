@@ -17,3 +17,5 @@
 
 #header { border-bottom: 0px dotted black; }
 #footer { border-top: 0px dotted black; }
+
+.padded { padding-top: 100px; padding-bottom: 100px; }

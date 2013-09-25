@@ -5,7 +5,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Barbara Shaurette', 'barbara.shaurette@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -115,6 +115,7 @@ INSTALLED_APPS = (
     'developer',
     'teacher',
     'content',
+    'contact',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'

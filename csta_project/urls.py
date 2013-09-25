@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^$', 'csta_project.views.home', name='home'),
     url(r'^teachers/', 'teacher.views.teachers', name='teachers'),
     url(r'^developers/', 'developer.views.developers', name='developers'),
+    url(r'^contact/', 'contact.views.contactus', name='contact'),
     url(r'^about/$', TemplateView.as_view(template_name="about.html")),
 
     # Uncomment the next line to enable the admin:
