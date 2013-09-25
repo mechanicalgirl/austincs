@@ -116,6 +116,7 @@ INSTALLED_APPS = (
     'teacher',
     'content',
     'contact',
+    'matchmaker',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
