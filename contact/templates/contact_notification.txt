@@ -1,0 +1,9 @@
+Date: {{ date }}
+
+Sender: {{ sender }}
+
+Sender Name: {{ sender_name }}
+
+Message: {{ message }}
+
+
