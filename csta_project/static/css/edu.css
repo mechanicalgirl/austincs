@@ -14,3 +14,6 @@
 .inactive { color: #333; }
 
 .required { font-weight: bold; color: red; }
+
+#header { border-bottom: 0px dotted black; }
+#footer { border-top: 0px dotted black; }
