@@ -1,6 +1,5 @@
-- trigger confirmation emails for teachers and developers
 - on developer page, set up a list of activity resources that can be added through the admin (needs model, view and url)
 - on home page, a list of announcements (blog posts)
-- automate matching between developers and teachers
 - set up a Twitter account; add the feed to the home page
+- automate matching between developers and teachers
 - form validation on teacher signup - zip code needs to be valid and in Austin area (compile a list)
