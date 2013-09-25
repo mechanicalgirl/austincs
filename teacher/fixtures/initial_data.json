@@ -1,0 +1,37 @@
+[
+{
+  "pk": 1, 
+  "model": "teacher.needs", 
+  "fields": {
+    "description": "Come in and speak to the class about their jobs"
+  }
+},
+{
+  "pk": 2, 
+  "model": "teacher.needs", 
+  "fields": {
+    "description": "Female programmers to talk about the challenges they face"
+  }
+},
+{
+  "pk": 3, 
+  "model": "teacher.needs", 
+  "fields": {
+    "description": "Someone to come in and teach a special unit"
+  }
+},
+{
+  "pk": 4, 
+  "model": "teacher.needs", 
+  "fields": {
+    "description": "Someone to help with an after-school program"
+  }
+},
+{
+  "pk": 5, 
+  "model": "teacher.needs", 
+  "fields": {
+    "description": "Other"
+  }
+}
+]

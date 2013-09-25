@@ -20,7 +20,9 @@ def teachers(request):
         if form.is_valid():
             obj = form.save(commit=False)
             obj.save()
-            ## return render_to_response("signup_succes.html")
+            context["thankyou"] = Description.objects.get(publish=True, slug='thank-you-for-signing-up')
+            return render_to_response("teacher_signup_success.html", context,
+                    context_instance=RequestContext(request))
         else:
             print form.is_valid()
             print form.errors
