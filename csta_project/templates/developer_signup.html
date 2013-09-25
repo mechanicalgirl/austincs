@@ -7,6 +7,7 @@
 {% block content %}
 
   {% include "title_body.html" %}
+
   <div class="right half">
 
   <div class="container">
@@ -20,22 +21,22 @@
               {% csrf_token %}
 
               <p>
-              <label class="control-label" for="multiSelect">Name<span class="required">*</span></label>
+              <label class="control-label">Name<span class="required">* {{ form.name.errors }}</span></label>
               <input id="id_name" maxlength="200" name="name" type="text">
               </p>
 
               <p>
-              <label class="control-label" for="multiSelect">Email Address<span class="required">*</span></label>
+              <label class="control-label">Email Address<span class="required">* {{ form.email.errors }}</span></label>
               <input id="id_email" maxlength="200" name="email" type="text">
               </p>
 
               <p>
-              <label class="control-label" for="multiSelect">Bio<span class="required">*</span></label>
+              <label class="control-label">Bio<span class="required">* {{ form.bio.errors }}</span></label>
               <textarea class="field span12" id="id_bio" name="bio" rows="3" maxlength="200" placeholder="What languages do you work in?  What are your areas of programming expertise?"></textarea>
               </p>
 
               <p>
-              <label class="control-label" for="multiSelect">Availability<span class="required">*</span></label>
+              <label class="control-label">Availability<span class="required">* {{ form.availability.errors }}</span></label>
               <select id="id_availability" name="availability">
                 <option value="" selected="selected">------------</option>
                 <option value="A">Only one time during the school year</option>
