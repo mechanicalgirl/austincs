@@ -1,3 +1,5 @@
+import datetime
+
 from django.conf import settings
 from django.shortcuts import render_to_response
 from django.template import RequestContext
@@ -21,6 +23,13 @@ def developers(request):
             obj = form.save(commit=False)
             obj.save()
             context["thankyou"] = Description.objects.get(publish=True, slug='thank-you-for-signing-up')
+
+            from django.core.mail import send_mail
+            email_dict = { 'date': datetime.date.today() }  ## placeholder dict
+            subject = "Austin CS Classrooms - Volunteer Confirmation"
+            body = render_to_string('developer_notification.txt', email_dict)
+            sent = send_mail(subject, body, settings.ADMINS[0][1], [settings.ADMINS[0][1]])
+
             return render_to_response("developer_signup_success.html", context,
                     context_instance=RequestContext(request))
         else:
