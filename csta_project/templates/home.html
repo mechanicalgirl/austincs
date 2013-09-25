@@ -20,9 +20,9 @@
 <div class="container-fluid">
   {% block content %}
     <p><h2>{{ content.title }}</h2></p>
-    <div class="left twothirds"><div class="well">
+    <div class="left twothirds well">
       <p>{% autoescape off %}{{ content.body }}{% endautoescape %}</p>
-    </div></div>
+    </div>
     <!-- <div class="left onethird">
       <div class="well">
         <p>{% autoescape off %}{{ content.body|striptags|truncatewords:50 }}{% endautoescape %}</p>
