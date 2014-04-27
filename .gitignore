@@ -1,7 +1,0 @@
-*.pyc
-.DS_Store
-
-manage.py
-
-csta_env
-db
